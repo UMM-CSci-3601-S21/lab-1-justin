@@ -131,6 +131,54 @@ img.pic {
   background-color: #000;
 }
 
+/*Example of a class selector.*/
+#tools {
+  background-color:  #ffde7a;
+
+}
+
+#tools > h2 {
+  font-size: 2em;
+}
+
+/*And example of nesting.*/
+#tools ul li {
+  padding:5px;
+  font-family:'Courier New', Courier, monospace;
+  font-size: 1.5em;
+}
+
+#tools-list a {
+  text-decoration: none;
+}
+
+#tools-list a:hover {
+  background-color: #ffbf00
+}
+.local a {
+  color:#000;
+  font-weight:bold;
+}
+
+.cloud a {
+  color: #4209097e
+}
+/*An exaple of an id.*/
+.ide a {
+  font-family: 'Press Start 2P';
+  font-size: .75em;
+}
+
+/*An example of grouping*/
+.version-control, .testing a {
+  font-family: Copperplate, fantasy;
+}
+
+
+.testing a {
+  text-decoration: underline !important;
+}
+
 #validation {
   font-size: 0.8rem;
   background-color: #d5d6d2;
