@@ -131,6 +131,48 @@ img.pic {
   background-color: #000;
 }
 
+#tools {
+  background-color:  #d5d6d2;
+
+}
+
+#tools > h2 {
+  font-size: 2em;
+}
+
+#tools ul > li {
+  padding:5px;
+  font-family:'Courier New', Courier, monospace;
+  font-size: 1.5em;
+}
+#tools-list a {
+  text-decoration: none;
+  color: #000000;
+
+}
+.local a{
+  background: rgba(105, 25, 25, 0.253);
+}
+
+.cloud a{
+  background : #ffde7a4b;
+}
+
+.version-control {
+  font-style: italic;
+}
+
+.ide {
+  font-weight: bold;
+}
+
+.testing {
+  text-decoration: underline;
+}
+
+/*
+*/
+
 #validation {
   font-size: 0.8rem;
   background-color: #d5d6d2;
