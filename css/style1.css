@@ -131,8 +131,9 @@ img.pic {
   background-color: #000;
 }
 
+/*Example of a class selector.*/
 #tools {
-  background-color:  #d5d6d2;
+  background-color:  #ffde7a;
 
 }
 
@@ -140,38 +141,43 @@ img.pic {
   font-size: 2em;
 }
 
-#tools ul > li {
+/*And example of nesting.*/
+#tools ul li {
   padding:5px;
   font-family:'Courier New', Courier, monospace;
   font-size: 1.5em;
 }
+
 #tools-list a {
   text-decoration: none;
-  color: #000000;
-
-}
-.local a{
-  background: rgba(105, 25, 25, 0.253);
 }
 
-.cloud a{
-  background : #ffde7a4b;
+#tools-list a:hover {
+  background-color: #ffbf00
+}
+.local a {
+  color:#000;
+  font-weight:bold;
 }
 
-.version-control {
-  font-style: italic;
+.cloud a {
+  color: #4209097e
+}
+/*An exaple of an id.*/
+.ide a {
+  font-family: 'Press Start 2P';
+  font-size: .75em;
 }
 
-.ide {
-  font-weight: bold;
+/*An example of grouping*/
+.version-control, .testing a {
+  font-family: Copperplate, fantasy;
 }
 
-.testing {
-  text-decoration: underline;
-}
 
-/*
-*/
+.testing a {
+  text-decoration: underline !important;
+}
 
 #validation {
   font-size: 0.8rem;
