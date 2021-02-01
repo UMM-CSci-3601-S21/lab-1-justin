@@ -7,7 +7,7 @@ use float to make something locate itself on the right or left
 */
 
 body {
-  padding-left:20%;
+  padding-left:15%;
   background: black;
   color: rgb(184, 184, 184);
   position:flex;
@@ -38,12 +38,12 @@ div{
 
 .section {
   font-size: 1.5em;
-  border-width: 3px;
-  border-color: rgb(190, 103, 4);
-  border-style: dashed;
+  border-width: 4px;
+  border-color: rgb(147, 4, 190);
+  border-style: solid;
   position:flex;
   max-width: 80%;
-  padding-left: 5%
-
+  padding-left: 5%;
+  background: rgb(26, 26, 26);
 
 }
