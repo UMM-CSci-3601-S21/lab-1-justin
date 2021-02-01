@@ -26,6 +26,7 @@ body {
 h2 {
   font-size: 2.5em;
 }
+
 div{
   justify-content: center;
   text-align:left;
@@ -37,7 +38,6 @@ div{
 
 .section {
   font-size: 1.5em;
-  border: 3px solid green;
   border-width: 3px;
   border-color: rgb(190, 103, 4);
   border-style: dashed;
