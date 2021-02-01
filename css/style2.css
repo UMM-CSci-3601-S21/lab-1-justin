@@ -20,6 +20,7 @@ body {
 #main-title {
   font-size: 4em;
   text-align: center;
+  text-justify: center;
   max-width: 80%
 }
 
