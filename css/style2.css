@@ -7,16 +7,18 @@ use float to make something locate itself on the right or left
 */
 
 body {
+  padding-left:40%;
   background: black;
   color: rgb(184, 184, 184);
   position:flex;
   align-items: center;
-  text-align:center;
+  text-align:left;
+  max-width: 40%;
 
 }
  div{
   justify-content: center;
-  text-align:center;
+  text-align:left;
   align-items: center;
   position:flex;
  }
@@ -27,5 +29,6 @@ body {
   border-color: rgb(190, 103, 4);
   border-style: dashed;
   position:flex;
+  max-width: 20em;
 
 }
