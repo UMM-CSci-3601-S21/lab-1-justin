@@ -6,6 +6,17 @@ use , to separate a list of things that have some shared css rule
 use float to make something locate itself on the right or left
 */
 
+@media screen and (min-width: 925px) {
+  .faculty-list {
+    display: flex;
+    flex-direction: row;
+    max-width: 53em;
+  }
+}
+faculty-list {
+  display: column;
+}
+
 body {
   padding-left:15%;
   background: black;
@@ -18,6 +29,7 @@ body {
 }
 
 #main-title {
+  padding-left: 2%;
   font-size: 4em;
   text-align: center;
   text-justify: center;
@@ -26,27 +38,61 @@ body {
 
 h2 {
   font-size: 2em;
+  text-align:center;
   margin-bottom: -10px;
 }
 
-
-div{
-  justify-content: center;
-  text-align:left;
-  align-items: center;
-  position:flex;
- }
-
-
+img {
+  border-width: 2px;
+  border-style: solid;
+  border-color: gray;
+}
 
 .section {
   font-size: 1.5em;
+  margin: 20px;
   border-width: 2px;
-  border-color: rgb(0, 129, 22);
+  border-radius: 40px;
+  border-color: rgb(31, 31, 31);
   border-style: solid;
   position:flex;
-  max-width: 80%;
+  max-width: 70%;
   padding-left: 5%;
+  padding-right: 5%;
   background: rgb(26, 26, 26);
+}
 
+.section li {
+  padding-top: 3px;
+}
+
+#courses > ul > li
+{
+  display: flex;
+  flex-direction: column;
+}
+#faculty {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+#faculty > ul > li {
+  display: inline-block;
+  font-family: sans-serif;
+  padding: 30px;
+}
+
+#faculty-list {
+  padding-left: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; /* This tell's the flex items to wrap if there
+                      isn't enough space for all of the items. Without this the
+                      faculty images will be in a row and only resize well unitl around
+                      550px width of screen. */
+  justify-content: center;
+  align-content: center;
 }
