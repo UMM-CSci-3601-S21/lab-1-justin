@@ -134,11 +134,12 @@ img.pic {
 /*Example of a class selector.*/
 #tools {
   background-color:  #ffde7a;
-
+  align-content: center;
 }
 
 #tools > h2 {
   font-size: 2em;
+  text-align: center;
 }
 
 /*And example of nesting.*/
@@ -146,6 +147,8 @@ img.pic {
   padding:5px;
   font-family:'Courier New', Courier, monospace;
   font-size: 1.5em;
+
+  text-justify:center;
 }
 
 #tools-list a {
