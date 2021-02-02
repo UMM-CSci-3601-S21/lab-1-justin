@@ -125,15 +125,27 @@ img {
 
 #tools-list li.version-control {
   list-style-image: url("../assets/images/icons8-git-squared.svg");
+
 }
 
 #tools-list li.testing {
   list-style-image: url("../assets/images/debug.png");
 }
 
+
+#tools-list li.cloud::after{
+  content:url("../assets/images/cloud-pngrepo-com.png");
+}
+
+
+#tools-list li.local::after{
+  content:url("../assets/images/folder.svg");
+}
 #tools-list a {
   color: rgb(0, 153, 0);
 }
+
+
 
 
 
