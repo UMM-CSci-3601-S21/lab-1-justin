@@ -119,11 +119,11 @@ img {
 }
 
 #tools-list li.ide {
-  list-style-image: url("../assets/iamges/ide.svg")
+  list-style-image: url("../assets/images/ide.svg")
 }
 
 #tools-list li.version-control {
-  list-style-image: url("../assets/images/git.svg");
+  list-style-image: url("../assets/images/icons8-git-squared.svg");
 }
 
 #tools-list li.testing {
