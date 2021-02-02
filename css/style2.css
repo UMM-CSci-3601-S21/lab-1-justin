@@ -6,34 +6,25 @@ use , to separate a list of things that have some shared css rule
 use float to make something locate itself on the right or left
 */
 
-@media screen and (min-width: 925px) {
-  .faculty-list {
-    display: flex;
-    flex-direction: row;
-    max-width: 53em;
-  }
-}
-faculty-list {
-  display: column;
-}
+
 
 body {
-  padding-left:15%;
+  padding: 30px;
   background: black;
+  background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(3, 1, 98));
   color: rgb(184, 184, 184);
-  position:flex;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  text-align:left;
-  max-width: 80%;
+
 
 }
 
 #main-title {
-  padding-left: 2%;
   font-size: 4em;
   text-align: center;
   text-justify: center;
-  max-width: 80%
+
 }
 
 h2 {
@@ -51,43 +42,33 @@ img {
 .section {
   font-size: 1.5em;
   margin: 20px;
+  min-width: 70%;
   border-width: 2px;
   border-radius: 40px;
   border-color: rgb(31, 31, 31);
   border-style: solid;
-  position:flex;
-  max-width: 70%;
   padding-left: 5%;
   padding-right: 5%;
   background: rgb(26, 26, 26);
 }
 
-.section li {
-  padding-top: 3px;
+#courses ul {
+  position: relative;
+  margin: 20px;
+  margin-left: 20%;
 }
 
-#courses > ul > li
-{
-  display: flex;
-  flex-direction: column;
-}
-#faculty {
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-}
 
 #faculty > ul > li {
+  flex-direction: column;
   display: inline-block;
   font-family: sans-serif;
-  padding: 30px;
+  padding: 15px;
 }
 
 #faculty-list {
-  padding-left: 0;
-  display: flex;
+  display:flex;
   flex-direction: row;
   flex-wrap: wrap; /* This tell's the flex items to wrap if there
                       isn't enough space for all of the items. Without this the
