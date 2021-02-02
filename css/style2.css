@@ -37,7 +37,7 @@ h2 {
 img {
   border-width: 2px;
   border-style: solid;
-  border-color: gray;
+  border-color: green;
 }
 
 .section {
@@ -98,7 +98,8 @@ img {
 }
 
 #faculty {
-  font-style: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color:#1ea6c6;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 #faculty > ul > li {
   flex-direction: column;
@@ -117,6 +118,9 @@ img {
   align-content: center;
 }
 
+#tools-list {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 #tools ul {
   list-style-image:none;
 }
