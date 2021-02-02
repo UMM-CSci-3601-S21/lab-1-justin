@@ -22,7 +22,7 @@ body {
   font-size: 4em;
   text-align: center;
   text-justify: center;
-  color: #bdbdbd;
+  color: green;
 }
 
 h2 {
@@ -30,7 +30,8 @@ h2 {
   color: #bdbdbd;
   text-align:center;
   margin-bottom: -10px;
-  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family:'Courier New', Courier, monospace;
+  font-weight:bolder;
 }
 
 img {
@@ -50,12 +51,19 @@ img {
   padding-left: 5%;
   padding-right: 5%;
   background: rgb(26, 26, 26, .4);
+}
 
+#pslo {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  color:#1ea6c6;
 }
 
 
 #courses > ul {
   position: relative;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  color: #1ea6c6;
   left: 20px;
   margin: 20px;
   margin-left: 20%;
@@ -64,8 +72,10 @@ img {
 
 
 #courses > ul > li > ul {
+  font-weight:lighter;
   position: relative;
   right: 10px;
+  color: green;
 }
 
 
@@ -77,17 +87,7 @@ img {
   user-select: none;
 }
 
-.box::before {
-  content: "\2610";
-  color: black;
-  display: inline-block;
-  margin-right: 6px;
-}
 
-.check-box::before {
-  content: "\2611";
-  color: dodgerblue;
-}
 
 .nested {
   display: none;
@@ -97,10 +97,12 @@ img {
   display: block;
 }
 
+#faculty {
+  font-style: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 #faculty > ul > li {
   flex-direction: column;
   display: inline-block;
-  font-family: sans-serif;
   padding: 15px;
 }
 
@@ -145,6 +147,30 @@ img {
   color: rgb(0, 153, 0);
 }
 
+.card {
+  font-family: "Myriad Web", "Myriad Pro", "Gill Sans", Helvetica, Arial, Sans-Serif;
+  background-color: rgb(26, 26, 26, .4);
+  min-width:100%;
+  margin: 0px;
+  text-align: center;
+  border-radius: 40px;
+  border-color: black;
+  border-style: dashed;
+  border-bottom-style: hidden;
+  border-width: 2px;
+  width: 200%;
+}
+
+.card ul {
+  list-style-type: none;
+}
+.card p {
+  font-size: 1em;
+  color: white;
+}
+.card a{
+  color: green;
+}
 
 
 
