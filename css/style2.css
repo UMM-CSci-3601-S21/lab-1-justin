@@ -10,12 +10,16 @@ use float to make something locate itself on the right or left
 
 body {
   padding: 30px;
+  padding-bottom: 0;
+  margin-bottom:0;
   background: black;
   background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(3, 1, 98));
   color: rgb(184, 184, 184);
   display: flex;
   flex-direction: column;
   align-items: center;
+
+
 }
 
 #main-title {
@@ -175,9 +179,38 @@ img {
 .card a{
   color: green;
 }
+#style-selector {
+  position: fixed;
+  left: 0;
 
+  bottom:0;
+  height: 46px;
 
+}
 
+#style-selector ul {
+  display:block;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:rgb(26, 26, 26, .4);
+}
 
+#style-selector li {
+  float: left; /*explore what happens if this is 'right' instead*/
+}
 
+#style-selector li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px; /*this adds some spacing around the items in our "nav bar" */
+  text-decoration: none;
+}
+
+/* Change the link background color to #000 (black) on hover */
+#style-selector li a:hover {
+  background-color:#1ea6c6;
+}
 
