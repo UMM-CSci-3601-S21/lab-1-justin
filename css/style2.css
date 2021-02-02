@@ -113,3 +113,24 @@ img {
   justify-content: center;
   align-content: center;
 }
+
+#tools ul {
+  list-style-image:none;
+}
+
+#tools-list li.ide {
+  list-style-image: url("../assets/iamges/ide.svg")
+}
+
+#tools-list li.version-control {
+  list-style-image: url("../assets/images/git.svg");
+}
+
+#tools-list li.testing {
+  list-style-image: url("../assets/images/debug.png");
+}
+
+
+
+
+
