@@ -147,7 +147,6 @@ img.pic {
   padding:5px;
   font-family:'Courier New', Courier, monospace;
   font-size: 1.5em;
-
   text-justify:center;
 }
 
@@ -158,6 +157,7 @@ img.pic {
 #tools-list a:hover {
   background-color: #ffbf00
 }
+
 .local a {
   color:#000;
   font-weight:bold;
@@ -166,6 +166,7 @@ img.pic {
 .cloud a {
   color: #4209097e
 }
+
 /*An exaple of an id.*/
 .ide a {
   font-family: 'Press Start 2P';
@@ -177,7 +178,6 @@ img.pic {
   font-family: Copperplate, fantasy;
 }
 
-
 .testing a {
   text-decoration: underline !important;
 }
@@ -187,5 +187,3 @@ img.pic {
   background-color: #d5d6d2;
   padding: 25px;
 }
-
-
