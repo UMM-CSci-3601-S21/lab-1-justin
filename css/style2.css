@@ -83,8 +83,6 @@ img {
   user-select: none;
 }
 
-
-
 .nested {
   display: none;
 }
@@ -135,12 +133,11 @@ img {
   list-style-image: url("../assets/images/debug.png");
 }
 
-
 #tools-list li.cloud::after{
   content:url("../assets/images/cloud-pngrepo-com.png");
 }
 
-#tools-list li.local::after{
+#tools-list li.local::after {
   content:url("../assets/images/folder.svg");
 }
 
