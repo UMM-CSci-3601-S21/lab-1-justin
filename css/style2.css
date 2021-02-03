@@ -161,39 +161,75 @@ id selector
 /*
 id selector
 -Declares the type of list image being used in lists within
-the tools element.
+-the tools element.
 */
 #tools ul {
   list-style-image:none;
 }
 
 /*
+id tag.class selector
+-Refers to any li objects of class ide within tools-list element. Alters
+-the way the 'bullet' is displayed.
 
+-The following section uses list objects with more than one class name attributed
+-to each of them, and the purpose of the following five declarations is to put
+-a matching icon on each one.
 */
 #tools-list li.ide {
   list-style-image: url("../assets/images/ide.svg")
 }
 
+/*
+id tag.class selector
+-Alters the way the bullet is displayed using an image.
+*/
 #tools-list li.version-control {
   list-style-image: url("../assets/images/icons8-git-squared.svg");
 }
 
+/*
+id tag.class selector
+-Alters the way the bullet is displayed using an image.
+*/
 #tools-list li.testing {
   list-style-image: url("../assets/images/debug.png");
 }
 
+/*
+id tag.class selector::manipulator
+-Puts an icon at the immediate end of any list object within tools-list element
+-of class cloud.
+*/
 #tools-list li.cloud::after{
   content:url("../assets/images/cloud-pngrepo-com.png");
 }
 
+/*
+id tag.class selector::manipulator
+-Puts an icon at the immediate end of any list object within tools-list element
+-of class local.
+*/
 #tools-list li.local::after {
   content:url("../assets/images/folder.svg");
 }
 
+/*
+id tag selector
+-Changes the color and default display of links within tools-list elements.
+*/
 #tools-list a {
   color: rgb(0, 153, 0);
 }
 
+/*
+class selector
+-(note: this is the little html/css markup tool link)
+-Being this element seemed to not be included in the class section, had to make
+-a different declaration.
+-Changes the font, margins, size, border of card element. Font is stolen from
+-the tool itself.
+*/
 .card {
   font-family: "Myriad Web", "Myriad Pro", "Gill Sans", Helvetica, Arial, Sans-Serif;
   background-color: rgb(26, 26, 26, .4);
@@ -208,19 +244,36 @@ the tools element.
   width: 200%;
 }
 
+/*
+class tag selector
+-Takes away list bullets for lists in class card.
+*/
 .card ul {
   list-style-type: none;
 }
 
+/*
+class tag selector
+-Changes font-size and color for p text in class card.
+*/
 .card p {
   font-size: 1em;
   color: white;
 }
 
+/*
+class tag
+-Changes link behavior withing class card.
+*/
 .card a{
   color: green;
 }
 
+/*
+id selector
+-Sticks the style selector element to the bottom left of the screen
+-no matter where it is being scrolled.
+*/
 #style-selector {
   position: fixed;
   left: 0;
@@ -228,28 +281,44 @@ the tools element.
   height: 46px;
 }
 
+/*
+id tag selector
+-Selects ul elements within style-selector elements, sets background color
+-and display type.
+*/
 #style-selector ul {
   display:block;
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  overflow: hidden; /*if text goes outside the box it is hidden instead of clipping.*/
   background-color:rgb(26, 26, 26, .4);
 }
 
+/*
+id tag selector
+-All li elements within style-selector elements will now float from the left.
+*/
 #style-selector li {
   float: left; /*explore what happens if this is 'right' instead*/
 }
 
+/*
+nested id tag tag selector
+-All a elements within li elements within style-selector elements have
+-white text color, are aligned center, and have padding.
+*/
 #style-selector li a {
   display: block;
   color: white;
   text-align: center;
-  padding: 14px 16px; /*this adds some spacing around the items in our "nav bar" */
+  padding: 14px 16px;
   text-decoration: none;
 }
 
-/* Change the link background color to #000 (black) on hover */
+/*nested id tag tag behavior selector
+-All a elements within li elements within style-selector elements will now
+change color when mouse is hovering over them. */
 #style-selector li a:hover {
   background-color:#1ea6c6;
 }
