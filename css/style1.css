@@ -134,11 +134,12 @@ img.pic {
 /*Example of a class selector.*/
 #tools {
   background-color:  #ffde7a;
-
+  align-content: center;
 }
 
 #tools > h2 {
   font-size: 2em;
+  text-align: center;
 }
 
 /*And example of nesting.*/
@@ -155,6 +156,7 @@ img.pic {
 #tools-list a:hover {
   background-color: #ffbf00
 }
+
 .local a {
   color:#000;
   font-weight:bold;
@@ -163,6 +165,7 @@ img.pic {
 .cloud a {
   color: #4209097e
 }
+
 /*An exaple of an id.*/
 .ide a {
   font-family: 'Press Start 2P';
@@ -173,7 +176,6 @@ img.pic {
 .version-control, .testing a {
   font-family: Copperplate, fantasy;
 }
-
 
 .testing a {
   text-decoration: underline !important;
